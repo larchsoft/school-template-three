@@ -373,10 +373,13 @@ p {
 }
 
 .footer .credit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     text-align: center;
     text-transform: capitalize;
-    margin-top: 3rem;
-    padding-top: 3rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
     border-top: 2px solid #a23eef;
 }
 
