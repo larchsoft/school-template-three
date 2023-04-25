@@ -4,15 +4,27 @@
     margin: 0;
     padding: 0;
 }
-:root{
+
+:root {
     --font-base: "Fredoka";
 }
-h1,h2,h3,h4,h5,h6,p
-{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     font-family: var(--font-base);
     color: black;
 }
-.navbar-brand{
+
+.text-pink {
+    color: purple;
+}
+
+.navbar-brand {
     color: #135847;
     width: 70px;
     height: 50px;
@@ -20,92 +32,103 @@ h1,h2,h3,h4,h5,h6,p
     text-transform: uppercase;
     margin-left: 3rem;
 }
-.offcanvas{
+
+.offcanvas {
     background: rgba(252, 253, 253, 0.5);
 }
-.nav-link{
+
+.nav-link {
     color: #135847;
     font-size: 1rem;
     margin: 0px 1rem;
     text-transform: uppercase;
     font-family: var(--font-base);
     font-weight: 500;
-    
+
 }
-.navbar-nav .nav-link.active{
+
+.navbar-nav .nav-link.active {
     color: #135847;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: rgb(160, 32, 74);
 }
-.navbar-nav .nav-link.active:hover{
+
+.navbar-nav .nav-link.active:hover {
     color: rgb(160, 32, 74);
 }
+
 .navbar .ms-auto {
     margin-left: 30px;
 }
-.navbar{
+
+.navbar {
     padding: 1rem 0px;
-    
+
 }
-.navbar-toggler{
+
+.navbar-toggler {
     margin: 0px;
 }
 
 
 /*header*/
-.header{
+.header {
     min-height: 100vh;
-    background: linear-gradient(to right,rgba(255,0,204,0.6),rgba(51,51,153,0.6)),url('/assests/img/background.jpg');
+    background: linear-gradient(to right, rgba(255, 0, 204, 0.6), rgba(51, 51, 153, 0.6)), url('/assests/img/background.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    clip-path: polygon(0 0,100% 0,100% 80% , 50% 100%,0 80%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
     position: relative;
     z-index: -1;
-
-
 }
 
-.header .row{
-   padding-top: 100px;
-   text-align: center;
+.header .row {
+    padding-top: 100px;
+    text-align: center;
 }
 
-.header h1{
+.header h1 {
     color: white;
     font-size: 4rem;
 }
-.header p{
+
+.header p {
     color: white;
     font-size: 1.2rem;
 }
-.header i{
+
+.header i {
     color: black;
 }
-@media (max-width: 776px){
-    .header{
+
+@media (max-width: 776px) {
+    .header {
         min-height: 60vh;
-        background: linear-gradient(to right,rgba(255,0,204,0.6),rgba(51,51,153,0.6)),url('/assests/img/background.jpg');
+        background: linear-gradient(to right, rgba(255, 0, 204, 0.6), rgba(51, 51, 153, 0.6)), url('/assests/img/background.jpg');
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
-        clip-path: polygon(0 0,100% 0,100% 80% , 50% 100%,0 80%);
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
         position: relative;
         z-index: -1;
-    
+
     }
-    .header h1{
+
+    .header h1 {
         color: white;
         font-size: 2rem;
     }
-    .header p{
+
+    .header p {
         color: white;
         font-size: 1rem;
     }
 }
 
-#overlap .card{
+#overlap .card {
     text-align: center;
     position: relative;
     z-index: 99;
@@ -113,141 +136,158 @@ h1,h2,h3,h4,h5,h6,p
     border: 1px dashed #040457;
     padding: 2rem 0px;
 }
-#overlap i{
+
+#overlap i {
     font-size: 2rem;
     color: #040457;
-    
+
 }
-#overlap span{
+
+#overlap span {
     font-size: 1.3rem;
 }
-.header .btn-main{
+
+.btn-main {
     border: 2px solid white;
     margin-top: 20px;
     padding: 6px 3rem;
     color: white;
     border-radius: 30px;
-
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
-.btn-section{
+
+.btn-main:hover {
+    background-color: #040457;
+    color: white;
+}
+
+.btn-section {
     border: 2px solid #040457;
     margin-top: 20px;
     padding: 6px 3rem;
     color: #040457;
     border-radius: 30px;
 }
-.btn-section:hover{
+
+.btn-section:hover {
     background-color: #040457;
     color: white;
 }
 
-   
 
-@media (max-width: 776px){
-    .share{
+
+@media (max-width: 776px) {
+    .share {
         text-align: center;
     }
-    .footer .col-md-3 .ql{
-        
+
+    .footer .col-md-3 .ql {
+
         text-align: center;
     }
-    .footer .col-md-3 .ul{
+
+    .footer .col-md-3 .ul {
         text-align: center;
     }
-    .footer .col-md-3{
+
+    .footer .col-md-3 {
         margin-bottom: 20px;
         text-align: center;
     }
-    .header.btn-main{
+
+    .header.btn-main {
         border: 2px solid #040457;
         margin-top: 20px;
         padding: 2px 0rem;
         color: #040457;
         border-radius: 30px;
     }
-    
+
 }
 
 
 
-@media (min-width: 776px) and (max-width: 992px)
-{
-    .header{
+@media (min-width: 776px) and (max-width: 992px) {
+    .header {
         min-height: 30vh;
-        background: linear-gradient(to right,rgba(255,0,204,0.6),rgba(51,51,153,0.6)),url('/assests/img/background.jpg');
+        background: linear-gradient(to right, rgba(255, 0, 204, 0.6), rgba(51, 51, 153, 0.6)), url('/assests/img/background.jpg');
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
-        clip-path: polygon(0 0,100% 0,100% 80% , 50% 100%,0 80%);
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
         position: relative;
         z-index: -1;
-    
+
     }
-    .header h1{
+
+    .header h1 {
         color: white;
         font-size: 2rem;
     }
-    .header p{
+
+    .header p {
         color: white;
         font-size: 1rem;
     }
 }
 
-#about{
+#about {
     background: url('/assests/img/blob-haikei.svg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#principal .img-fluid{
-   
+#principal .img-fluid {
+
     background: #ae9cd8;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
-@media (min-width: 992px) and (max-width: 1100px){
-    #overlap{
+@media (min-width: 992px) and (max-width: 1100px) {
+    #overlap {
         margin-top: -150px;
         margin-bottom: 100px;
     }
 }
 
-@media (min-width: 1100px){
-    #overlap{
+@media (min-width: 1100px) {
+    #overlap {
         margin-top: -200px;
         margin-bottom: 100px;
     }
-    #principal .img-fluid{
+
+    #principal .img-fluid {
         border-radius: none;
     }
 }
 
-@media (min-width: 778px) and (max-width: 992px)
-{
-    #overlap{
+@media (min-width: 778px) and (max-width: 992px) {
+    #overlap {
         margin-top: -100px;
         margin-bottom: 100px;
     }
-    
-    #principal .img-fluid{
+
+    #principal .img-fluid {
         padding: 2rem;
     }
-    
+
 }
 
 /*Courses*/
-#course{
+#course {
     background: url('/assests/img/blob-haikei3.svg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#course .card{
+#course .card {
     padding: 50px 10px;
     margin: 30px 0px;
     border: 1px dotted purple;
 }
-#course .btn-section{
+
+#course .btn-section {
     border: 2px solid #040457;
     margin-top: 20px;
     padding: 1px 1rem;
@@ -256,149 +296,206 @@ h1,h2,h3,h4,h5,h6,p
     width: 100px;
     margin: 0px auto;
 }
-#course .card:hover{
+
+#course .card {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#course .card h2 {
+    color: #2a2a2a;
+}
+
+#course .card p {
+    color: #2a2a2a;
+}
+
+#course .btn-section:hover {
+    color: white !important;
+
+
+}
+
+#course .card:hover {
     background: purple;
-    color: #fff;
+}
+
+#course .card:hover p {
+    color: white;
+}
+
+#course .card:hover h2 {
+    color: white;
+}
+
+#course .card:hover .btn-section {
+    border: 2px solid #ffffff;
+    color: white;
 }
 
 /*footer*/
-.footer{
-    background: linear-gradient(#ceace8,#ceace8,#ceace8);
+.footer {
+    background: linear-gradient(#ceace8, #ceace8, #ceace8);
 }
-.footer a{
+
+.footer a {
     text-decoration: none;
-    color: #a23eef ;
+    color: #a23eef;
     font-weight: 600;
     font-size: 1rem;
     font-family: var(--font-heading);
 }
-.footer a:hover{
+
+.footer a:hover {
     text-decoration: underline;
     color: #a23eef;
 }
-.footer .share i{
+
+.footer .share i {
     font-size: 30px;
     margin: 0px 5px;
 }
-.footer .share i:hover{
+
+.footer .share i:hover {
     color: #26ad8c;
 }
-.footer .btn{
+
+.footer .btn {
     margin-top: 1rem;
-    
+
     border: 2px solid #a23eef;
     color: #a23eef;
     font-weight: 500;
 }
-.footer .btn:hover{
-    background: linear-gradient(#ceace8,#ceace8,#ceace8);
+
+.footer .btn:hover {
+    background: linear-gradient(#ceace8, #ceace8, #ceace8);
 }
-.footer .credit{
+
+.footer .credit {
     text-align: center;
     text-transform: capitalize;
     margin-top: 3rem;
     padding-top: 3rem;
     border-top: 2px solid #a23eef;
 }
-.footer .credit span{
+
+.footer .credit span {
     font-weight: 600;
     color: #a23eef;
 }
-.footer{
+
+.footer {
     padding-top: 3rem;
 }
-.footer .card{
+
+.footer .card {
     padding: 1rem 5rem;
 }
 
 /*gallery*/
-.item .img-fluid{
+.item .img-fluid {
     height: 200px;
 }
 
 /*blog*/
-#blog{
-    
+#blog {
+
     padding: 2rem 0px;
 }
-#blog .card{
+
+#blog .card {
     border: 2px solid purple;
     border-radius: 50px 0px 50px 0px;
-    
+
 }
-#blog .card:hover{
+
+#blog .card:hover {
     background: #E1CAE6;
     color: white;
 }
-#blog .card h5{
+
+#blog .card h5 {
     text-transform: uppercase;
 }
-#blog .card-img-top{
+
+#blog .card-img-top {
     height: 30vh;
-    border-radius:50px 0px 0px 0px
+    border-radius: 50px 0px 0px 0px
 }
-@media (min-width: 776px) and (max-width: 992px)
-{
-    #blog .card-img-top{
+
+@media (min-width: 776px) and (max-width: 992px) {
+    #blog .card-img-top {
         height: 10vh;
     }
-    #blog .btn-main{
+
+    #blog .btn-main {
         font-size: 0.7rem;
         padding: 0.2rem 0.2rem;
     }
-    #overlap ul{
+
+    #overlap ul {
         margin-left: 0px;
     }
-    .owl-carousel .img-fluid{
+
+    .owl-carousel .img-fluid {
         height: 10vh;
     }
 }
+
 /*contact*/
 
-#contact a{
-     color: white;
+#contact a {
+    color: white;
     text-decoration: none;
     color: purple;
-    
-    
+
+
 }
 
-#contact i{
+#contact i {
     color: white;
     padding: 1.4rem 0rem;
     font-size: 30px;
-    
+
 }
-#contact .col-md-7{
+
+#contact .col-md-7 {
     border: 2px dotted purple;
     border-radius: 0px 100px 0px 0px;
-    background: linear-gradient(to right,rgba(255,0,204,0.6),rgba(51,51,153,0.6));
-    
-    
+    background: linear-gradient(to right, rgba(255, 0, 204, 0.6), rgba(51, 51, 153, 0.6));
+
+
 }
-#contact .col-md-7 .row{
+
+#contact .col-md-7 .row {
     padding: 3rem;
 }
-#contact h2{
+
+#contact h2 {
     color: white;
     font-size: 2.5rem;
     padding: 2rem;
 }
-#contact ul li{
-   
+
+#contact ul li {
+
     list-style: none;
     width: 50px;
 }
-#contact ul{
+
+#contact ul {
     margin: 0px auto;
 }
-.input-container{
-    
+
+.input-container {
+
     position: relative;
     align-items: center;
-    
+
 }
-.label{
+
+.label {
     position: absolute;
     left: 10px;
     top: 14px;
@@ -407,7 +504,8 @@ h1,h2,h3,h4,h5,h6,p
     z-index: 1;
     color: white;
 }
-.text-input{
+
+.text-input {
     padding: 0.8rem;
     width: 100%;
     height: 100%;
@@ -419,10 +517,12 @@ h1,h2,h3,h4,h5,h6,p
     transition: all 0.3s;
     color: white;
 }
-#contact .card{
+
+#contact .card {
     border: 2px dashed purple;
 }
-.label::before{
+
+.label::before {
     content: "";
     height: 5px;
     background-color: #ae9cd8;
@@ -432,33 +532,41 @@ h1,h2,h3,h4,h5,h6,p
     width: 100%;
     z-index: -1;
 }
-.text-input:focus{
+
+.text-input:focus {
     border: 2px solid purple;
 }
 
-.text-input:focus + .label, .filled{
+.text-input:focus+.label,
+.filled {
     top: -10px;
     color: black;
     font-size: 14px;
 }
-.text-input:focus ~ .text-input, .text-input:not(:placeholder-shown).text-input:not(:focus) ~ .label {
+
+.text-input:focus~.text-input,
+.text-input:not(:placeholder-shown).text-input:not(:focus)~.label {
     top: -10px;
     color: white;
     font-size: 14px;
 }
-.text-input::placeholder{
+
+.text-input::placeholder {
     font-size: 16px;
     opacity: 0;
     transition: all 0.3s;
 }
-#contact i{
+
+#contact i {
     font-size: 2rem;
     color: purple;
 }
-.text-input:focus::placeholder{
+
+.text-input:focus::placeholder {
     opacity: 1;
     animation-delay: 0.2s;
 }
-.input-container{
+
+.input-container {
     margin-bottom: 5px;
 }
