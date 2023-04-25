@@ -76,7 +76,7 @@ p {
 /*header*/
 .header {
     min-height: 100vh;
-    background: linear-gradient(to right, rgba(255, 0, 204, 0.6), rgba(51, 51, 153, 0.6)), url('/assests/img/background.jpg');
+    background: linear-gradient(to right, rgba(255, 0, 204, 0.6), rgba(51, 51, 153, 0.6)), url('http://templates.larchsoft.co.in/school-html-template-three/assests/img/background.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -107,7 +107,7 @@ p {
 @media (max-width: 776px) {
     .header {
         min-height: 60vh;
-        background: linear-gradient(to right, rgba(255, 0, 204, 0.6), rgba(51, 51, 153, 0.6)), url('/assests/img/background.jpg');
+        background: linear-gradient(to right, rgba(255, 0, 204, 0.6), rgba(51, 51, 153, 0.6)), url('http://templates.larchsoft.co.in/school-html-template-three/assests/img/background.jpg');
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
@@ -211,7 +211,7 @@ p {
 @media (min-width: 776px) and (max-width: 992px) {
     .header {
         min-height: 30vh;
-        background: linear-gradient(to right, rgba(255, 0, 204, 0.6), rgba(51, 51, 153, 0.6)), url('/assests/img/background.jpg');
+        background: linear-gradient(to right, rgba(255, 0, 204, 0.6), rgba(51, 51, 153, 0.6)), url('http://templates.larchsoft.co.in/school-html-template-three/assests/img/background.jpg');
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
@@ -233,7 +233,7 @@ p {
 }
 
 #about {
-    background: url('/assests/img/blob-haikei.svg');
+    background: url('http://templates.larchsoft.co.in/school-html-template-three/assests/img/blob-haikei.svg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -276,7 +276,7 @@ p {
 
 /*Courses*/
 #course {
-    background: url('/assests/img/blob-haikei3.svg');
+    background: url('http://templates.larchsoft.co.in/school-html-template-three/assests/img/blob-haikei3.svg');
     background-size: cover;
     background-repeat: no-repeat;
 }
